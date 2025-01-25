@@ -4,12 +4,6 @@ import * as Notifications from 'expo-notifications'
 import Constants from 'expo-constants'
 import { Platform } from 'react-native'
 
-/**Para gerar o ID para o canal de push notification
- * eas login  ( faca o login na sua conta da expo.dev )
- * eas init
- * eas build:configure
- */
-
 export function configNotificationHandler() {
   Notifications.setNotificationHandler({
     handleNotification: async () => ({
@@ -81,16 +75,3 @@ export async function registerForPushNotificationsAsync(
 
   return token
 }
-
-/**
- * Example:
- *
- * configNotificationHandler()
- *
- * function App() {
- *  useEffect({
- *    registerForPushNotificationsAsync().then(console.log)
- *  }, [])
- *  return null
- * }
- */
