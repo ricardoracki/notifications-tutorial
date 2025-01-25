@@ -23,6 +23,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f8fab34a-d1fa-40ae-bb23-78a632b35c40"
+      }
+    },
+    "owner": "ricardo_racki"
   }
 }
