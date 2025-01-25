@@ -6,6 +6,7 @@ import {
   registerForPushNotificationsAsync,
 } from './notifications-utils'
 
+import Constants from 'expo-constants'
 import { StatusBar } from 'expo-status-bar'
 import { useEffect } from 'react'
 
@@ -24,7 +25,9 @@ export default function App() {
     }
     let token = (
       await Notifications.getExpoPushTokenAsync({
-        projectId: 'f8fab34a-d1fa-40ae-bb23-78a632b35c40', // Token gerado no
+        projectId:
+          Constants?.expoConfig?.extra?.eas?.projectId ??
+          Constants?.easConfig?.projectId,
       })
     ).data
 
