@@ -22,7 +22,7 @@ Para gerar o ID para o canal de push notification
 ### Mobile
 
 ```bash
-npx expo install expo-notification
+npx expo install expo-notifications expo-device expo-constants
 ```
 
 ### Api
