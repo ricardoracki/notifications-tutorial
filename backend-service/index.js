@@ -5,7 +5,7 @@ let expo = new Expo({})
 let messages = []
 
 messages.push({
-  to: 'ExponentPushToken[aUPHskD99rUyC4enl1ERSb]',
+  to: 'ExponentPushToken[...]', // Inserir o token real
   sound: 'default',
   body: 'Body of the notification',
   data: { someData: 'goes here' },
