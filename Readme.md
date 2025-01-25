@@ -21,8 +21,6 @@ Para gerar o ID para o canal de push notification
 
 ### Mobile
 
-[code]Hello world[/code]
-
 ```bash
 npx expo install expo-notification
 ```
